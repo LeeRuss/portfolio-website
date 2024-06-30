@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   width: 100%;
   padding: 0;
@@ -15,6 +19,124 @@ body {
   }
 }
 
+body {
+  --sb-track-color: #2421d5;
+  --sb-thumb-color: #232e33;
+  --sb-size: 0.5rem;
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 3px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+  }
+}
+
 .material-symbols-outlined {
   font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 48;
+}
+
+main {
+  margin-top: 3rem;
+  @media (min-width: 1000px) {
+    margin-top: 0;
+    margin-right: 250px;
+  }
+}
+
+section {
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: solid 1px #868e96;
+  @media (min-width: 1000px) {
+    height: 100vh;
+    padding-left: 2rem;
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0 0.5rem;
+  display: flex;
+  gap: 1rem;
+  font-size: 1rem;
+  color: #343a40;
+  font-weight: bold;
+  @media (min-width: 1000px) {
+    color: #6d757d;
+    font-size: 1.375rem;
+  }
+}
+ul > li {
+  display: inline-block;
+}
+
+ul li:first-of-type {
+  @media (min-width: 1000px) {
+    color: #4e4bff;
+  }
+}
+
+ul li:last-of-type {
+  color: #4e4bff;
+  @media (min-width: 1000px) {
+    color: #6d757d;
+  }
+}
+
+h1 {
+  color: #343a40;
+  font-size: 2rem;
+  margin: 1rem 0;
+  @media (min-width: 1000px) {
+    color: #343a40;
+    font-size: 6rem;
+  }
+}
+
+h1 span:last-of-type {
+  color: #4e4bff;
+  @media (min-width: 1000px) {
+    color: #343a40;
+  }
+}
+
+h1 span:first-of-type {
+  @media (min-width: 1000px) {
+    color: #4e4bff;
+  }
+}
+
+p {
+  color: #505860;
+  font-size: 1rem;
+  padding: 0;
+  padding-right: 1rem;
+  @media (min-width: 1000px) {
+    padding-right: 2rem;
+  }
+}
+
+.IconContainer {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  @media (min-width: 1000px) {
+    margin-top: 2rem;
+    padding-right: 2.25rem;
+  }
 }
