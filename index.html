@@ -3,14 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Dariusz Russek</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="navbar.css" />
   </head>
   <body>
-    <div id="navbar">
+    <nav>
+      <div id="dropDown">
+        <span id="menuDropButton" class="material-symbols-outlined">
+          menu
+        </span>
+        <div class="LinksContainer" style="right: 0">
+          <a href="#aboutMe" title="Section about me"> About Me </a>
+          <a href="#education" title="Section about my education">
+            Education
+          </a>
+          <a
+            href="#experience"
+            title="Section about my professional experience"
+          >
+            Experience
+          </a>
+          <a href="#skills" title="Section about my skills"> Skills </a>
+          <a href="#portfolio" title="Section with my portfolio"> Portfolio </a>
+        </div>
+      </div>
       <img id="avatar" alt="avatar picture" src="assets/picture_of_me.jpg" />
-      <nav>
+      <div class="LinksContainer">
         <a href="#aboutMe" title="Section about me"> About Me </a>
         <a href="#education" title="Section about my education"> Education </a>
         <a href="#experience" title="Section about my professional experience">
@@ -18,8 +41,8 @@
         </a>
         <a href="#skills" title="Section about my skills"> Skills </a>
         <a href="#portfolio" title="Section with my portfolio"> Portfolio </a>
-      </nav>
-    </div>
+      </div>
+    </nav>
     <div>asdasdasdas</div>
     <script type="module" src="/main.js"></script>
   </body>
