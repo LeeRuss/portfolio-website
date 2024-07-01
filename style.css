@@ -49,6 +49,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 main {
+  width: 100%;
   margin-top: 3rem;
   @media (min-width: 1000px) {
     margin-top: 0;
@@ -169,7 +170,7 @@ section > ul {
   display: grid;
   width: 100%;
   grid-template-columns: 3fr repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr) 0.5fr 1fr;
+  grid-template-rows: repeat(2, 0.5fr) 0.5fr 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
@@ -178,16 +179,25 @@ section > ul {
   grid-area: 1 / 1 / 2 / 2;
 }
 .Grid .Years {
-  grid-area: 1 / 4 / 2 / 5;
-  color: #505860;
-}
-.Grid h3 {
-  grid-area: 2 / 1 / 3 / 2;
-}
-.Grid .Description {
   grid-area: 4 / 1 / 5 / 2;
   color: #505860;
+  @media (min-width: 1000px) {
+    grid-area: 1 / 4 / 2 / 5;
+  }
+}
+.Grid h3 {
+  grid-area: 2 / 1 / 3 / 3;
+  @media (min-width: 1000px) {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+}
+.Grid .Description {
+  grid-area: 3 / 1 / 3 / 3;
+  color: #505860;
   font-weight: normal;
+  @media (min-width: 1000px) {
+    grid-area: 4 / 1 / 5 / 2;
+  }
 }
 
 .ExperienceGrid {
