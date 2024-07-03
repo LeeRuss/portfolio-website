@@ -44,6 +44,10 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
+button {
+  all: unset;
+}
+
 .material-symbols-outlined {
   font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 48;
 }
@@ -58,9 +62,7 @@ main {
 }
 
 section {
-  padding-left: 1rem;
-  padding-bottom: 1.625rem;
-  padding-top: 3rem;
+  padding: 3rem 1rem 1.625rem 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -70,7 +72,12 @@ section {
     height: 100vh;
     padding-left: 2rem;
     padding-bottom: 3rem;
+    padding: 0 2rem 3rem 2rem;
   }
+}
+
+section:last-of-type {
+  padding-bottom: 0;
 }
 
 #aboutMe ul {
@@ -107,6 +114,9 @@ h1 {
   @media (min-width: 1000px) {
     color: #343a40;
     font-size: 6rem;
+  }
+  @media (max-height: 900px) {
+    font-size: 3rem;
   }
 }
 
@@ -231,7 +241,6 @@ section > ul {
   gap: 1rem;
   @media (min-width: 1000px) {
     margin-top: 2rem;
-    padding-right: 2.25rem;
   }
 }
 
@@ -279,4 +288,122 @@ section > ul {
   margin-left: 0.5rem;
   font-weight: bold;
   color: #505860;
+}
+
+#portfolioButtonsWrapper {
+  width: 66%;
+  gap: 5vw;
+  align-self: center;
+  grid-column-start: profile-start;
+  grid-column-end: profile-end;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  min-height: auto;
+  justify-items: center;
+  @media (min-width: 550px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5vw;
+  }
+  @media (min-width: 1400px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.PortfolioButton {
+  width: 100%;
+  box-shadow: 7px 9px 24px 6px rgba(66, 68, 90, 1);
+  display: flex;
+  border: solid 1px #343a40;
+  box-sizing: border-box;
+}
+
+.PortfolioButton img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.PortfolioDialog[open] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  box-shadow: 0px 14px 38px -5px rgba(66, 68, 90, 1);
+  max-height: 90vh;
+  width: 80%;
+  @media (min-width: 1000px) {
+    max-width: 60%;
+  }
+}
+
+.PortfolioDialog span {
+  cursor: pointer;
+}
+
+.CloseDialogButton {
+  align-self: flex-end;
+}
+
+.CloseDialogButton span {
+  font-size: 2rem;
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  color: #242020;
+  @media (min-width: 1000px) {
+    font-size: 3rem;
+  }
+}
+
+.DialogButtonsWrapper {
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.PortfolioDialog p span:first-of-type {
+  color: #4e4bff;
+}
+
+.PortfolioDialog a {
+  all: unset;
+  display: block;
+  background-color: #4e4bff;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  align-self: flex-start;
+  cursor: pointer;
+}
+
+.PortfolioDialog h1 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.ImageViewer {
+  background-color: #242020;
+  width: 100%;
+  min-height: 200px;
+  height: 500px;
+  max-height: 50vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ImageViewer button span {
+  color: #4e4bff;
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  font-size: 3rem;
+  @media (min-width: 1000px) {
+    font-size: 5rem;
+  }
+}
+
+.Slide {
+  object-fit: contain;
+  max-width: calc(100% - 6rem);
+  @media (min-width: 1000px) {
+    max-width: calc(100% - 10rem);
+  }
 }

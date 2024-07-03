@@ -11,12 +11,15 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="navbar.css" />
   </head>
-  <body>
+  <body tabindex="0">
     <nav>
       <div id="dropDown">
-        <span id="menuDropButton" class="material-symbols-outlined">
-          menu
-        </span>
+        <button type="button">
+          <span id="menuDropButton" class="material-symbols-outlined">
+            menu
+          </span>
+        </button>
+
         <div class="LinksContainer" style="right: 0">
           <a href="#aboutMe" title="Section about me"> About Me </a>
           <a href="#education" title="Section about my education">
@@ -51,11 +54,37 @@
           <li>• example.mail@gmail.com</li>
         </ul>
         <p>
-          I am programmer with passion to games, recently fascinated by web
-          development. I graduated Computer Science at University of Silesia. In
-          my free time I am working on my projects to gain some experience. For
-          the same reason I am looking for a job or an internship as a front-end
-          developer.
+          Hi, I'm Darek, a passionate and dedicated front-end developer and
+          recent graduate with a Bachelor's degree in Computer Science from the
+          University of Silesia. I specialize in crafting responsive web
+          applications using modern technologies like HTML, CSS, JavaScript,
+          TypeScript, and React. Additionally, I have experience with Phaser JS
+          for game development and AWS Platform as the cloud solution.
+        </p>
+        <p>
+          During my studies, I worked on a variety of projects, including CRUD
+          web applications and interactive games, which you can explore in the
+          projects section of my portfolio. These experiences have honed my
+          skills in both web development and game development, and have equipped
+          me with a strong foundation to tackle real-world challenges.
+        </p>
+        <p>
+          I'm currently seeking a starting position as a front-end developer or
+          a game developer utilizing web technologies. My goal is to contribute
+          to innovative projects and continue learning and growing in a dynamic
+          work environment. Beyond my technical skills, I pride myself on my
+          excellent time management, ability to work both independently and
+          collaboratively, and my passion for continuous learning. I am fluent
+          in Polish and have a B2 level proficiency in English, with basic
+          knowledge of German.
+        </p>
+        <p>
+          In my free time, I enjoy playing video games and exploring new
+          technologies. I believe that my unique blend of technical knowledge
+          and personal interests makes me a strong candidate for any development
+          team. Thank you for visiting my portfolio. I look forward to the
+          opportunity to contribute to your team and help bring your projects to
+          life.
         </p>
         <div class="IconContainer">
           <a href="https://github.com/LeeRuss"
@@ -159,10 +188,6 @@
                 <img src="assets/npm.svg" alt="NPM" />
                 <span> - npm</span>
               </li>
-              <li>
-                <img src="assets/VisualStudioCode.svg" alt="VSC" />
-                <span> - VisualStudioCode</span>
-              </li>
             </ul>
           </div>
           <div class="ToolsWrapper">
@@ -182,6 +207,261 @@
               </li>
             </ul>
           </div>
+        </div>
+      </section>
+      <section id="portfolio">
+        <h1><span>Portfolio</span></h1>
+        <div id="portfolioButtonsWrapper">
+          <button class="PortfolioButton" name="WhatWasLost" type="button">
+            <img
+              src="/assets/whatwastlostIcon/WWS_mini.png"
+              alt="What Was Lost game"
+            />
+          </button>
+          <dialog class="PortfolioDialog" id="WhatWasLost">
+            <button class="CloseDialogButton" type="button">
+              <span class="material-symbols-outlined"> close </span>
+            </button>
+            <h1><span>What Was Lost</span></h1>
+            <div class="ImageViewer">
+              <button type="button" class="PrevImageButton">
+                <span class="material-symbols-outlined"> chevron_left </span>
+              </button>
+              <img
+                class="Slide"
+                src="/assets/whatwastlostIcon/image1.png"
+                alt="image1"
+              />
+              <img
+                class="Slide"
+                src="/assets/whatwastlostIcon/image2.png"
+                alt="image2"
+              />
+              <img
+                class="Slide"
+                src="/assets/whatwastlostIcon/image3.png"
+                alt="image3"
+              />
+              <button type="button" class="NextImageButton">
+                <span class="material-symbols-outlined"> chevron_right </span>
+              </button>
+            </div>
+            <p>
+              <span>What Was Lost </span> is a platformer with soulslike
+              elements, such as reborn enemies, challenging stages to complete
+              and, of course, if you die, you'll have to start over. Take on the
+              role of one of the last guardians of the runes, a lone monk on
+              whom the fate of the entire world will rest. The game was
+              developed on the PhaserJs engine. I was responsible for the
+              implementation of the UI and game mechanics with the exception of
+              player movement. My colleagues did some of the graphics, designed
+              the levels and storyline.
+            </p>
+            <h2>Technologies</h2>
+            <div class="IconContainer">
+              <img src="/assets/Phaser.svg" alt="Phaser JS" />
+            </div>
+            <div class="DialogButtonsWrapper">
+              <a
+                href="https://kannen283.itch.io/what-was-lost"
+                title="Demo"
+                target="_blank"
+              >
+                Demo
+              </a>
+            </div>
+          </dialog>
+          <button class="PortfolioButton" name="Neutron" type="button">
+            <img src="/assets/Neutron/Neutron_mini.png" alt="Neutron" />
+          </button>
+          <dialog class="PortfolioDialog" id="Neutron">
+            <button class="CloseDialogButton" type="button">
+              <span class="material-symbols-outlined"> close </span>
+            </button>
+            <h1><span>Neutron</span></h1>
+            <div class="ImageViewer">
+              <button type="button" class="PrevImageButton">
+                <span class="material-symbols-outlined"> chevron_left </span>
+              </button>
+              <img
+                class="Slide"
+                src="/assets/Neutron/image1.png"
+                alt="image1"
+              />
+              <img
+                class="Slide"
+                src="/assets/Neutron/image2.png"
+                alt="image2"
+              />
+              <img
+                class="Slide"
+                src="/assets/Neutron/image3.png"
+                alt="image3"
+              />
+              <button type="button" class="NextImageButton">
+                <span class="material-symbols-outlined"> chevron_right </span>
+              </button>
+            </div>
+            <p>
+              <span>Neutron </span>is an abstract strategy game for two players
+              invented by Robert A. Kraus. It is a digital representation of the
+              board game "Neutron" made using JS. It was created to learn the
+              basics of game theory and the algorithms used in it. It is
+              possible to play two people locally or against one of the
+              algorithms. It is also possible to simulate a game between two
+              algorithms. We created this while pair programming.
+            </p>
+            <h2>Technologies</h2>
+            <div class="IconContainer">
+              <img src="/assets/Neutron/HTML5.svg" alt="HTML" />
+              <img src="/assets/Neutron/CSS3.svg" alt="CSS" />
+              <img src="/assets/Neutron/Javascript.svg" alt="Javascript" />
+            </div>
+            <div class="DialogButtonsWrapper">
+              <a
+                href="https://github.com/AvengeR-13/Neutron-game"
+                title="Source code"
+                target="_blank"
+              >
+                Source code
+              </a>
+            </div>
+          </dialog>
+          <button class="PortfolioButton" name="TripBuddy" type="button">
+            <img src="/assets/TripBuddy/TripBuddy_mini.png" alt="TripBuddy" />
+          </button>
+          <dialog class="PortfolioDialog" id="TripBuddy">
+            <button class="CloseDialogButton" type="button">
+              <span class="material-symbols-outlined"> close </span>
+            </button>
+            <h1><span>TripBuddy</span></h1>
+            <div class="ImageViewer">
+              <button type="button" class="PrevImageButton">
+                <span class="material-symbols-outlined"> chevron_left </span>
+              </button>
+              <img
+                class="Slide"
+                src="/assets/TripBuddy/image1.png"
+                alt="image1"
+              />
+              <img
+                class="Slide"
+                src="/assets/TripBuddy/image2.png"
+                alt="image2"
+              />
+              <img
+                class="Slide"
+                src="/assets/TripBuddy/image3.png"
+                alt="image3"
+              />
+              <img
+                class="Slide"
+                src="/assets/TripBuddy/image4.png"
+                alt="image4"
+              />
+              <img
+                class="Slide"
+                src="/assets/TripBuddy/image5.png"
+                alt="image5"
+              />
+              <button type="button" class="NextImageButton">
+                <span class="material-symbols-outlined"> chevron_right </span>
+              </button>
+            </div>
+            <p>
+              <span>TripBuddy</span> is an app for finding travel partners. It
+              was created as a credit project for one of the courses in college.
+              I handled the client side using TypeScript and React, while my
+              colleague handled the server side with Laravel. The requirement
+              was to use agile methodology, for which we used Jiira software.
+            </p>
+            <h2>Technologies</h2>
+            <div class="IconContainer">
+              <img src="/assets/TripBuddy/TypeScript.svg" alt="TypeScript" />
+              <img src="/assets/TripBuddy/React.svg" alt="React" />
+              <img
+                src="/assets/TripBuddy/Material UI (MUI).svg"
+                alt="Material UI"
+              />
+              <img src="/assets/TripBuddy/PHP.svg" alt="PHP" />
+              <img src="/assets/TripBuddy/postgresql.svg" alt="Postgresql" />
+            </div>
+          </dialog>
+          <button class="PortfolioButton" type="button" name="P2PReview">
+            <img src="/assets/p2previewIcons/P2PR_mini.png" alt="P2PReview" />
+          </button>
+          <dialog class="PortfolioDialog" id="P2PReview">
+            <button class="CloseDialogButton" type="button">
+              <span class="material-symbols-outlined"> close </span>
+            </button>
+            <h1><span>P2PReview</span></h1>
+            <div class="ImageViewer">
+              <button type="button" class="PrevImageButton">
+                <span class="material-symbols-outlined"> chevron_left </span>
+              </button>
+              <img
+                class="Slide"
+                src="/assets/p2previewIcons/image1.png"
+                alt="image1"
+              />
+              <img
+                class="Slide"
+                src="/assets/p2previewIcons/image2.png"
+                alt="image2"
+              />
+              <img
+                class="Slide"
+                src="/assets/p2previewIcons/image3.png"
+                alt="image3"
+              />
+              <img
+                class="Slide"
+                src="/assets/p2previewIcons/image4.png"
+                alt="image4"
+              />
+              <button type="button" class="NextImageButton">
+                <span class="material-symbols-outlined"> chevron_right </span>
+              </button>
+            </div>
+            <p>
+              <span>P2PReview</span> is a peer review social platform created as
+              part of my CS degree engineering project. It is basicly a CRUD
+              application that allows users to add works and review the works of
+              other users. The user can set his level of sophistication for a
+              particular domain and based on that, works will be suggested to
+              him for review. I made the client side using React and libraries
+              such as AWSAmplify, React Router, Material UI, React Router or
+              React Hook Form. For the server side, I used the AWS platform with
+              NodeJS Lambda Functions, RDS with Postgresql, Cognito for user
+              authentication and REST api.
+            </p>
+            <h2>Technologies</h2>
+            <div class="IconContainer">
+              <img src="/assets/p2previewIcons/React.svg" alt="React" />
+              <img src="/assets/p2previewIcons/Nodejs.svg" alt="Nodejs" />
+              <img src="/assets/p2previewIcons/AWS.svg" alt="AWS" />
+              <img
+                src="/assets/p2previewIcons/postgresql.svg"
+                alt="Postgresql"
+              />
+            </div>
+            <div class="DialogButtonsWrapper">
+              <a
+                href="https://github.com/LeeRuss/P2PReview"
+                title="Source code"
+                target="_blank"
+              >
+                Source code
+              </a>
+              <a
+                href="https://dev1009.dz5lqw3sy00vf.amplifyapp.com/"
+                title="Demo"
+                target="_blank"
+              >
+                Demo
+              </a>
+            </div>
+          </dialog>
         </div>
       </section>
     </main>
