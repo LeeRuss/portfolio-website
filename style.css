@@ -76,10 +76,6 @@ section {
   }
 }
 
-section:last-of-type {
-  padding-bottom: 0;
-}
-
 #aboutMe ul {
   display: flex;
   flex-direction: row;
