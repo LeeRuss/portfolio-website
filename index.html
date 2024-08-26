@@ -19,17 +19,23 @@
   </head>
   <body tabindex="0">
     <nav>
-      <div id="dropDown">
+      <div class="DropDown" id="languages">
         <button type="button">
-          <span
-            id="menuDropButton"
-            class="material-symbols-outlined"
-            translate="no"
-          >
+          <span class="MenuDropButton material-symbols-outlined" translate="no">
+            language
+          </span>
+        </button>
+        <div class="LinksContainer" style="right: 0">
+          <a href="/" title="English site"> English</a>
+          <a href="/pl/index.html" title="Polish site"> Polski </a>
+        </div>
+      </div>
+      <div class="DropDown" id="menu">
+        <button type="button">
+          <span class="MenuDropButton material-symbols-outlined" translate="no">
             menu
           </span>
         </button>
-
         <div class="LinksContainer" style="right: 0">
           <a href="#aboutMe" title="Section about me"> About Me </a>
           <a href="#education" title="Section about my education">
@@ -44,6 +50,10 @@
           <a href="#skills" title="Section about my skills"> Skills </a>
           <a href="#portfolio" title="Section with my portfolio"> Portfolio </a>
         </div>
+      </div>
+      <div id="languagesButtonsContainer">
+        <a href="https://dariuszrussek.com" title="English site"> English</a>
+        <a href="https://dariuszrussek.com/pl" title="Polish site"> Polski </a>
       </div>
       <img id="avatar" alt="avatar picture" src="assets/me.jpg" />
       <div class="LinksContainer">
@@ -61,8 +71,8 @@
         <h1><span>Dariusz</span> <span>Russek</span></h1>
         <ul>
           <li>
-            <span class="material-symbols-outlined"> call </span> +48 453 159
-            017
+            <span class="material-symbols-outlined"> call </span> +48 777 777
+            777
           </li>
           <li>
             <span class="material-symbols-outlined"> mail </span>

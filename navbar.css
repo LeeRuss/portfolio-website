@@ -4,8 +4,8 @@ nav {
   width: 100vw;
   height: min-content;
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  flex-direction: row;
+  justify-content: space-between;
   @media (min-width: 1000px) {
     display: flex;
     flex-direction: column;
@@ -13,13 +13,14 @@ nav {
     width: 250px;
     max-width: 300px;
     align-items: center;
+    justify-content: flex-start;
   }
 }
 
 #avatar {
   display: none;
   margin-top: 10vh;
-  margin-bottom: 10vh;
+  margin-bottom: 5vh;
   border-radius: 100%;
   width: 80%;
   aspect-ratio: 1/1;
@@ -35,7 +36,7 @@ nav {
   display: none;
   position: absolute;
   background-color: #f1f1f1;
-  min-width: 160px;
+  min-width: -webkit-fill-available;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   color: #fff;
@@ -51,13 +52,17 @@ nav {
   }
 }
 
-.LinksContainer a {
+#languages .LinksContainer {
+  left: 0rem;
+}
+
+.LinksContainer a,
+#languagesButtonsContainer a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
   @media (min-width: 1000px) {
-    display: inline;
     all: unset;
     font-weight: bold;
     line-height: 150%;
@@ -66,7 +71,23 @@ nav {
   }
 }
 
-.LinksContainer a:hover {
+#languagesButtonsContainer {
+  display: none;
+  @media (min-width: 1000px) {
+    margin-top: 1vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+#languagesButtonsContainer a {
+  font-size: 1.75rem;
+  margin: 0 5%;
+}
+
+.LinksContainer a:hover,
+#languagesButtonsContainer a:hover {
   text-shadow: 2px 1px 6px #00000067;
   cursor: pointer;
   @media (min-width: 1000px) {
@@ -78,7 +99,7 @@ nav {
   color: #fff;
 }
 
-#dropDown {
+.DropDown {
   position: relative;
   height: 3rem;
   display: inline-block;
@@ -87,12 +108,12 @@ nav {
   }
 }
 
-#menuDropButton {
+.MenuDropButton {
   cursor: pointer;
   color: #fff;
   font-size: 3rem;
 }
 
-#dropDown:hover .LinksContainer {
+.DropDown:hover .LinksContainer {
   display: block;
 }
