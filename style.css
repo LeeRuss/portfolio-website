@@ -272,14 +272,26 @@ section > ul {
 }
 
 #skillsWrapper h3 {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   font-weight: bold;
   color: #343a40;
+  @media (min-width: 1000px) {
+    margin-top: 1rem;
+  }
 }
 
 .ToolsWrapper {
   display: flex;
   flex-direction: column;
+  margin: 0 1rem;
+}
+
+.ToolsWrapper h2 {
+  margin-top: 1rem;
+}
+
+.ToolsWrapper h3 {
+  margin-top: 0.5rem;
 }
 
 .ToolsWrapper li {
